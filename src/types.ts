@@ -1,4 +1,12 @@
-import { LocalVideoTrack, RemoteVideoTrack, TwilioError } from 'twilio-video';
+import {
+  LocalVideoTrack,
+  RemoteVideoTrack,
+  TwilioError,
+  VideoBandwidthProfileOptions,
+  Track,
+  BandwidthProfileOptions,
+  LocalTrack,
+} from 'twilio-video';
 import { EventEmitter } from 'events';
 
 declare module 'twilio-video' {
@@ -12,7 +20,7 @@ declare module 'twilio-video' {
   }
 
   interface LocalTrackPublication {
-    setPriority: (priority: Track.Priority) => void;
+    setPriority: (priority: Track.Priority) => this;
   }
 
   interface LocalVideoTrack {
@@ -22,7 +30,7 @@ declare module 'twilio-video' {
 
   interface RemoteVideoTrack {
     isSwitchedOff: boolean;
-    setPriority: (priority: Track.Priority | null) => void;
+    setPriority: (priority: Track.Priority | null) => this;
   }
 
   interface VideoBandwidthProfileOptions {

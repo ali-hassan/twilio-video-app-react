@@ -3,11 +3,11 @@
 		"apps": [],
 		"details": [{
 				"appID": "SX5J6BN2KX.com.twilio.video-app",
-				"paths": ["/room/*"]
+				"paths": ["/rda-helpdesk-twilio-app/room/*"]
 			},
 			{
 				"appID": "SX5J6BN2KX.com.twilio.video-app-internal",
-				"paths": ["/room/*"]
+				"paths": ["/rda-helpdesk-twilio-app/room/*"]
 			}
 		]
 	}

@@ -36,16 +36,16 @@ ReactDOM.render(
     <Router>
       <AppStateProvider>
         <Switch>
-          <PrivateRoute exact path="/">
+          <PrivateRoute exact path="/rda-helpdesk-twilio-app/">
             <VideoApp />
           </PrivateRoute>
-          <PrivateRoute path="/room/:URLRoomName">
+          <PrivateRoute path="/rda-helpdesk-twilio-app/room/:URLRoomName">
             <VideoApp />
           </PrivateRoute>
           <Route path="/login">
             <LoginPage />
           </Route>
-          <Redirect to="/" />
+          <Redirect to="/rda-helpdesk-twilio-app/" />
         </Switch>
       </AppStateProvider>
     </Router>
