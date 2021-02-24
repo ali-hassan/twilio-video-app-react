@@ -12,7 +12,7 @@ const twilioApiKeySecret = '7ScYo4w101g4Bgk8r6udGHPu7XFoPBmu';
 
 app.use(express.static(path.join(__dirname, 'build')));
 
-app.get('/token', (req, res) => {
+app.get('/rda-helpdesk-twilio-app/token', (req, res) => {
   const { identity, roomName } = req.query;
   const token = new AccessToken(twilioAccountSid, twilioApiKeySID, twilioApiKeySecret, {
     ttl: MAX_ALLOWED_SESSION_DURATION,
